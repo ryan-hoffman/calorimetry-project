@@ -1,0 +1,75 @@
+{% extends 'layout.html' %}
+{% block content %}
+    <div class='container'>
+        <div class='row'>
+             <div class='col-sm-2 px-5'></div>
+            <div class='col-sm-8'>
+            <!-- <div class='mx-auto' style='width: 600px;'> -->
+                <div class='mt-5 mb-200'>
+                    <h1 class='display-3'>Calorimetry Input Data</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class='container'>
+        <div class='row py-5'>
+            <form method='POST' class='form-inline' action='/input'>
+                <div class='col-sm-6 py-1'>
+                    <h5>What is the sample name?</h5>
+                </div>
+                <div class='col-sm-4'>
+                    <div class='form-group'>
+                        <input type='text' class='form-control-sm' name='sample_name' placeholder='Sample Name'>
+                    </div>
+                </div>
+                <div class='col-sm-6 py-1'>
+                    <h5>What is the starting temperature of the water?</h5>
+                </div>
+                <div class='col-sm-4'>
+                    <div class='form-group'>
+                        <input type='text' class='form-control-sm' name='start_temp' placeholder='Starting Temp'>
+                    </div>
+                </div>
+                <div class='col-sm-6 py-1'>
+                    <h5>What is the ending temperature of the water?</h5>
+                </div>
+                <div class='col-sm-4'>
+                    <div class='form-group'>
+                        <input type='text' class='form-control-sm' name='end_temp' placeholder='Ending Temp'>
+                    </div>
+                </div>
+                <div class='col-sm-6 py-1'>
+                    <h5>What is the mass of the water?</h5>
+                </div>
+                <div class='col-sm-4'>
+                    <div class='form-group'>
+                        <input type='text' class='form-control-sm' name='water_mass' placeholder='Water Mass'>
+                    </div>
+                </div>
+                <div class='col-sm-6 py-1'>
+                    <h5>What is the starting mass of the sample?</h56>
+                </div>
+                <div class='col-sm-4'>
+                    <div class='form-group'>
+                        <input type='text' class='form-control-sm' name='start_wt' placeholder='Sample Start Mass'>
+                    </div>
+                </div>
+               <div class='col-sm-6 py-1'>
+                    <h5>What is the ending mass of the sample?</h5>
+                </div>
+                <div class='col-sm-4'>
+                    <div class='form-group'>
+                        <input type='text' class='form-control-sm' name='end_wt' placeholder='Sample End Mass'>
+                    </div>
+                </div>
+                <div class='col-sm-6 py-1'>
+                    <h5></h5>
+                </div>
+                <div class='col-sm-6 px-5 py-5'>
+                    <input class='btn btn-outline-dark' type='submit' value='calculate'>
+                </div>
+            </form>
+            </div>
+        </div>
+    </div>
+{% endblock content %}

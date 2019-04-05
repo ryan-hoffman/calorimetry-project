@@ -1,0 +1,40 @@
+{% extends 'layout.html' %}
+{% block content %}
+
+    <div class='container'>
+        <div class='row py-5'>
+            <div class='col-sm-12 py-3'>
+                <table class='table table-bordered'>
+                    <thead>
+                        <tr>
+                            <th>Sample Name</th>
+                            <th>Starting temperature</th>
+                            <th>Ending temperature</th>
+                            <th>Mass of the water</th>
+                            <th>Starting mass of the sample</th>
+                            <th>Ending mass of the sample</th>
+                            <th>Delta temperature</th>
+                            <th>Energy burned in the experiment</th>
+                            <th>calories contained in the food sample</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>{{ sample_name }}</td>
+                            <td>{{ start_temp }}</td>
+                            <td>{{ end_temp }}</td>
+                            <td>{{ water_mass }}</td>
+                            <td>{{ start_wt }}</td>
+                            <td>{{ end_wt }}</td>
+                            <td>{{ delta_temp }}</td>
+                            <td>{{ Q }}</td>
+                            <td>{{ C }}</td>
+                        </tr>
+                    </tbody>
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}
+
+

@@ -1,0 +1,26 @@
+body {
+    background-color: #ff9849;
+    /*color of text*/
+    color: #422818;
+    margin-top: 3rem;
+}
+
+/*.bg-dark {
+    background-color: #911f02 !important;
+}*/
+
+.navbar-custom {
+    background-color: #995f1a;
+}
+
+.navbar-custom .navbar-brand {
+    color: #422818;
+}
+
+.navbar-custom .navbar-nav .nav-link {
+    color: #422818;
+}
+
+.navbar-custom .navbar-nav .nav-link:hover {
+    color: #c6975d;
+}
