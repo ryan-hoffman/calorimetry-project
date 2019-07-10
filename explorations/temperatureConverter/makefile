@@ -1,19 +1,17 @@
 default:
-	@echo "targets (choose one): venv.install, venv.start, pip.install, pip.versions"
+	@echo "targets (choose one): venv.install.ryan, venv.start.ryan, venv.install.paul, venv.start.paul, pip.install, pip.versions"
 
-venv.intall.paul:
+venv.install.paul:
 	virtualenv --python=/Users/paul/anaconda/bin/python3 ./py363
 
-venv.start.paul:
-	source py363/bin/activate
 
 # ryan will have his own path and preferred version of python 3
 # modify these next two make targets appropriately
-venv.intall.ryan:
+venv.install.ryan:
 	virtualenv --python=/Users/paul/anaconda/bin/python3 ./py363
 
 venv.start.ryan:
-	source py363/bin/activate
+	. py363/bin/activate
 
 pip.install:
 	pip install -r requirements.txt
