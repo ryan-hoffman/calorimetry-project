@@ -1,0 +1,2 @@
+default:
+	python firstLook.py
