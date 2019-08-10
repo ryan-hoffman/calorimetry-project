@@ -1,0 +1,2 @@
+default:
+	python app.py
