@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+    $(".alwaysVisible")
+        .mouseenter(function(){
+            var infoBox = $(this).siblings(".conditionallyVisible");
+            infoBox.show()
+            })
+        .mouseleave(function(){
+            var infoBox = $(this).siblings(".conditionallyVisible");
+            infoBox.hide()
+            })
+    }); // on ready
+
+
+</script>
+</head>
+
+<body>
+  <div style="text-align: center">
+    <div class="alwaysVisible" style="display:inline-block;margin-top:100px">Mouse-over for more info</div>
+    <div class="conditionallyVisible" hidden style="margin:100px;">more information here</div>
+  </div>
+</body>
+</html>
