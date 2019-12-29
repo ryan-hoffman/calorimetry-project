@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="popin.js"></script>
+    <script>
+      var kb = {"Line One": "More info on line #1",
+                "Line Three": "More info on line #3"
+               };
+    </script>
+    <style>
+      body{
+         font-size: 24px;
+         }
+      .annotationDiv, .staticDiv{
+          margin: 20px;
+          padding: 10px;
+          width: 80px;
+          height: 120px;
+          border: 1px green solid;
+          border-radius: 5px;
+          }
+      .annotationDiv{
+         border: 3px blue solid;
+         font-size: 12px;
+         margin-left: 100px;
+         background-color: beige; 
+         }
+    </style>
+  </head>
+  <body>
+    <div id="controlsDiv">
+        <span id="popinControlsDiv">Annotation pop-ins? </span>
+        <input id="radio-popin-off" type="radio" name="popins" value="off" > off</input>
+        <input id="radio-popin-on"  type="radio" name="popins" value="on" checked> on</input>
+     </div>
+
+    <div id="line_01">
+      <div class="staticDiv">Line One</div>
+      <div class="annotationDiv"></div>
+    </div>
+    
+    <div id="line_02">
+      <div class="staticDiv">Line Two</div>
+      <div class="annotationDiv"></div>
+    </div>
+    
+    <div id="line_03">
+      <div class="staticDiv">Line Three</div>
+      <div class="annotationDiv"></div>
+    </div>
+    
+  </body>
+</html>
